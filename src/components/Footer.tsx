@@ -12,14 +12,6 @@ const Footer = () => {
     { name: 'Contact', href: '#contact' },
   ]
 
-  const services = [
-    'PlayStation Gaming',
-    'VR Experience',
-    'Mini Theatre',
-    'Birthday Parties',
-    'Corporate Events',
-    'Photo Shoots',
-  ]
 
   return (
     <footer className="bg-black pt-16 pb-8">
