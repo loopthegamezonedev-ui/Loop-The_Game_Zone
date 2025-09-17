@@ -14,7 +14,6 @@ import Footer from './components/Footer'
 import LoadingScreen from './components/LoadingScreen'
 import WhatsAppButton from './components/WhatsAppButton'
 import ScrollToTop from './components/ScrollToTop'
-//import AnnouncementBar from './components/AnnouncementBar'
 
 function App() {
   const [isLoading, setIsLoading] = useState(true)
