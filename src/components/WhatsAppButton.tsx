@@ -3,8 +3,9 @@ import { FaWhatsapp } from 'react-icons/fa'
 const WhatsAppButton = () => {
   const handleWhatsAppClick = () => {
     console.log('WhatsApp button clicked!') // Debug log
+    const phoneNumber = '919603944601';
     const message = "Hi! I'd like to know more about Loop - The Game Zone."
-    const whatsappUrl = `https://wa.me/qr/ANRXQSMLFHBMM1?text=${encodeURIComponent(message)}`
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     console.log('Opening WhatsApp URL:', whatsappUrl) // Debug log
     window.open(whatsappUrl, '_blank')
   }
