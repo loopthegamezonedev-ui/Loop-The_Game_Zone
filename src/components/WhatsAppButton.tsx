@@ -5,9 +5,9 @@ const WhatsAppButton = () => {
     console.log('WhatsApp button clicked!') // Debug log
     const phoneNumber = '919603944601';
     const message = "Hi! I'd like to know more about Loop - The Game Zone."
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
     console.log('Opening WhatsApp URL:', whatsappUrl) // Debug log
-    window.open(whatsappUrl, '_blank')
+    window.location.href = whatsappUrl; // use direct navigation
   }
 
   return (
