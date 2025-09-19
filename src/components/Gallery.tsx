@@ -54,7 +54,7 @@ const Gallery = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16 hidden md:block"
+          className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Our <span className="gradient-text">Gallery</span>
@@ -90,7 +90,7 @@ const Gallery = () => {
           {/* Scrollable Container */}
           <div
             ref={scrollContainerRef}
-            className="flex gap-5 overflow-x-auto scrollbar-hide py-4 px-12"
+            className="flex gap-4 overflow-x-auto scrollbar-hide py-4 px-4 sm:px-8 md:px-12"
             style={{
               scrollbarWidth: 'none',
               msOverflowStyle: 'none',
@@ -110,7 +110,7 @@ const Gallery = () => {
                   <img
                     src={image.src}
                     alt={image.alt}
-                    className="w-[240px] h-[320px] object-cover"
+                    className="w-40 h-56 sm:w-48 sm:h-72 md:w-60 md:h-80 object-cover"
                     loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
