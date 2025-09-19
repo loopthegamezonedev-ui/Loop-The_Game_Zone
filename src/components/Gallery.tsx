@@ -111,7 +111,7 @@ const Gallery = () => {
                     src={image.src}
                     alt={image.alt}
                     className="w-40 h-56 sm:w-48 sm:h-72 md:w-60 md:h-80 object-cover"
-                    loading="lazy"
+                    loading="eager"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
                     <p className="text-white font-medium text-sm">{image.alt}</p>
